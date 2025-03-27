@@ -13,7 +13,7 @@ export default function SavingsPlans() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/aws-savings-plans.png" // Replace with actual screenshot
+            src="/savingplans.png"
             alt="AWS Savings Plans Screenshot"
             width={800}
             height={400}
@@ -25,8 +25,9 @@ export default function SavingsPlans() {
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
           <h2 className="text-2xl font-semibold text-blue-300">Overview</h2>
           <p className="mt-3 text-gray-300">
-            AWS Savings Plans help reduce cloud costs by offering **lower prices** in exchange  
-            for a commitment to a certain level of usage **for one or three years**.
+            AWS Savings Plans help reduce cloud costs by offering lower prices
+            in exchange for a commitment to a certain level of usage for one or
+            three years.
           </p>
         </section>
 
@@ -36,19 +37,31 @@ export default function SavingsPlans() {
             How It Saves Costs
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>💰 **Lower Prices:** Up to **72% discount** compared to On-Demand pricing.</li>
-            <li>⚡ **Automatic Application:** Discounts **apply automatically** without manual tracking.</li>
-            <li>🌍 **Works Across Services:** Compute Savings Plans apply to **EC2, Fargate, and Lambda**.</li>
+            <li>
+              💰 Lower Prices: Up to 72% discount compared to On-Demand pricing.
+            </li>
+            <li>
+              ⚡ Automatic Application: Discounts apply automatically without
+              manual tracking.
+            </li>
+            <li>
+              🌍 Works Across Services: Compute Savings Plans apply to EC2,
+              Fargate, and Lambda.
+            </li>
           </ul>
         </section>
 
         {/* Best Practices */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold text-blue-300">Best Practices</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            Best Practices
+          </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>✅ **Analyze usage before committing** using **AWS Cost Explorer**.</li>
-            <li>✅ **Choose a 3-year plan** for **better discounts**.</li>
-            <li>✅ **Combine with Reserved Instances** for maximum cost efficiency.</li>
+            <li>✅ Analyze usage before committing using AWS Cost Explorer.</li>
+            <li>✅ Choose a 3-year plan for better discounts.</li>
+            <li>
+              ✅ Combine with Reserved Instances for maximum cost efficiency.
+            </li>
           </ul>
         </section>
 
@@ -59,12 +72,16 @@ export default function SavingsPlans() {
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
             <li>
-              <span className="font-semibold text-white">Azure Reserved VM Instances:</span>{" "}
+              <span className="font-semibold text-white">
+                Azure Reserved VM Instances:
+              </span>{" "}
               Similar to AWS Reserved Instances.
             </li>
             <li>
-              <span className="font-semibold text-white">GCP Committed Use Contracts:</span>{" "}
-              Provides **sustained usage discounts**.
+              <span className="font-semibold text-white">
+                GCP Committed Use Contracts:
+              </span>{" "}
+              Provides sustained usage discounts.
             </li>
           </ul>
         </section>

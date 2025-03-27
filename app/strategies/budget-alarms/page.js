@@ -13,7 +13,7 @@ export default function BudgetAlarms() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/aws-budget-alarms.png" // Replace with actual screenshot
+            src="/budgets.png" 
             alt="AWS Budgets & Alarms Screenshot"
             width={800}
             height={400}
@@ -25,8 +25,9 @@ export default function BudgetAlarms() {
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
           <h2 className="text-2xl font-semibold text-blue-300">Overview</h2>
           <p className="mt-3 text-gray-300">
-            AWS Budgets allows users to **set cost and usage alarms** to **monitor cloud expenses proactively**.  
-            It ensures that cloud spending stays within predefined limits, preventing cost overruns.
+            AWS Budgets allows users to set cost and usage alarms to monitor
+            cloud expenses proactively. It ensures that cloud spending stays
+            within predefined limits, preventing cost overruns.
           </p>
         </section>
 
@@ -36,18 +37,28 @@ export default function BudgetAlarms() {
             How It Helps in Cost Optimization
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>📊 **Real-time Cost Tracking:** Identifies unexpected cost spikes early.</li>
-            <li>🚨 **Automated Alerts:** Notifies users when **spending exceeds limits**.</li>
-            <li>🛠️ **Service-Specific Monitoring:** Tracks costs for specific AWS services like **EC2, S3, and Lambda**.</li>
+            <li>
+              📊 Real-time Cost Tracking: Identifies unexpected cost spikes
+              early.
+            </li>
+            <li>
+              🚨 Automated Alerts: Notifies users when spending exceeds limits.
+            </li>
+            <li>
+              🛠️ Service-Specific Monitoring: Tracks costs for specific AWS
+              services like EC2, S3, and Lambda.
+            </li>
           </ul>
         </section>
 
         {/* Best Practices */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold text-blue-300">Best Practices</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            Best Practices
+          </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>✅ **Set budget alarms** for **EC2, S3, and Lambda**.</li>
-            <li>✅ **Integrate with AWS Cost Explorer** for **detailed analysis**.</li>
+            <li>✅ Set budget alarms for EC2, S3, and Lambda.</li>
+            <li>✅ Integrate with AWS Cost Explorer for detailed analysis.</li>
           </ul>
         </section>
 
@@ -58,12 +69,16 @@ export default function BudgetAlarms() {
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
             <li>
-              <span className="font-semibold text-white">Azure Cost Management + Budgets:</span>{" "}
+              <span className="font-semibold text-white">
+                Azure Cost Management + Budgets:
+              </span>{" "}
               Tracks and optimizes Azure costs.
             </li>
             <li>
-              <span className="font-semibold text-white">GCP Budgets and Alerts:</span>{" "}
-              Provides **cost alerts and spending limits** on Google Cloud.
+              <span className="font-semibold text-white">
+                GCP Budgets and Alerts:
+              </span>{" "}
+              Provides cost alerts and spending limits on Google Cloud.
             </li>
           </ul>
         </section>

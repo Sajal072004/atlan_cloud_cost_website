@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Centered Brand Name */}
         <div className="text-center w-1/3">
           <Link href="/" className="text-xl lg:text-2xl font-bold tracking-wide hover:text-blue-400 transition">
-            Cloud Cost Optimization
+            Cloud Cost Optimization ( By Sajal Namdeo)
           </Link>
         </div>
 

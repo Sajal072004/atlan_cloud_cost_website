@@ -13,7 +13,7 @@ export default function AnomalyDetection() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/aws-anomaly-detection.png" // Replace with actual screenshot
+            src="/anamoly.png" // Replace with actual screenshot
             alt="AWS Anomaly Detection Screenshot"
             width={800}
             height={400}
@@ -25,8 +25,8 @@ export default function AnomalyDetection() {
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
           <h2 className="text-2xl font-semibold text-blue-300">Overview</h2>
           <p className="mt-3 text-gray-300">
-            Amazon **Lookout for Metrics** helps detect unusual **cost spikes** before they escalate, 
-            using **AI-powered anomaly detection**.
+            Amazon Lookout for Metrics helps detect unusual cost spikes before
+            they escalate, using AI-powered anomaly detection.
           </p>
         </section>
 
@@ -36,19 +36,34 @@ export default function AnomalyDetection() {
             How It Helps in Cost Optimization
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>🤖 **AI-Driven Analysis:** Uses machine learning to detect anomalies in cloud spending.</li>
-            <li>🚨 **Real-Time Alerts:** Notifies teams about unexpected cost increases instantly.</li>
-            <li>📉 **Root Cause Insights:** Helps pinpoint the **cause** of anomalies for quick resolution.</li>
+            <li>
+              🤖 AI-Driven Analysis: Uses machine learning to detect anomalies
+              in cloud spending.
+            </li>
+            <li>
+              🚨 Real-Time Alerts: Notifies teams about unexpected cost
+              increases instantly.
+            </li>
+            <li>
+              📉 Root Cause Insights: Helps pinpoint the cause of anomalies for
+              quick resolution.
+            </li>
           </ul>
         </section>
 
         {/* Best Practices */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold text-blue-300">Best Practices</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            Best Practices
+          </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>✅ **Combine with AWS Budgets & Alarms** for early anomaly detection.</li>
-            <li>✅ **Regularly review CloudWatch Logs** to minimize false positives.</li>
-            <li>✅ **Set custom thresholds** based on past usage trends.</li>
+            <li>
+              ✅ Combine with AWS Budgets & Alarms for early anomaly detection.
+            </li>
+            <li>
+              ✅ Regularly review CloudWatch Logs to minimize false positives.
+            </li>
+            <li>✅ Set custom thresholds based on past usage trends.</li>
           </ul>
         </section>
 
@@ -59,11 +74,15 @@ export default function AnomalyDetection() {
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
             <li>
-              <span className="font-semibold text-white">Azure Metrics Advisor:</span>{" "}
+              <span className="font-semibold text-white">
+                Azure Metrics Advisor:
+              </span>{" "}
               AI-powered anomaly detection for cost spikes.
             </li>
             <li>
-              <span className="font-semibold text-white">GCP Anomaly Detection:</span>{" "}
+              <span className="font-semibold text-white">
+                GCP Anomaly Detection:
+              </span>{" "}
               Uses AI to monitor and detect unusual cloud spending.
             </li>
           </ul>

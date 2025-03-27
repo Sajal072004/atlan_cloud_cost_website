@@ -13,7 +13,7 @@ export default function TrustedAdvisor() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/aws-trusted-advisor.png" // Replace with actual screenshot
+            src="/trusted-advisor.png" 
             alt="AWS Trusted Advisor Screenshot"
             width={800}
             height={400}
@@ -25,9 +25,10 @@ export default function TrustedAdvisor() {
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
           <h2 className="text-2xl font-semibold text-blue-300">Overview</h2>
           <p className="mt-3 text-gray-300">
-            AWS Trusted Advisor is a **cloud optimization tool** that provides **real-time recommendations**  
-            to help reduce costs, improve performance, and enhance security. It continuously analyzes  
-            AWS resources and detects inefficiencies, ensuring cost-effective cloud usage.
+            AWS Trusted Advisor is a cloud optimization tool that provides
+            real-time recommendations to help reduce costs, improve performance,
+            and enhance security. It continuously analyzes AWS resources and
+            detects inefficiencies, ensuring cost-effective cloud usage.
           </p>
         </section>
 
@@ -41,32 +42,36 @@ export default function TrustedAdvisor() {
               <span className="font-semibold text-white">
                 Idle or Underutilized Resources:
               </span>{" "}
-              Detects underused EC2 instances, RDS databases, and other services,  
-              suggesting downsizing or termination.
+              Detects underused EC2 instances, RDS databases, and other
+              services, suggesting downsizing or termination.
             </li>
             <li>
               <span className="font-semibold text-white">
                 Right-Sizing Recommendations:
               </span>{" "}
-              Suggests optimal instance types based on usage patterns to eliminate waste.
+              Suggests optimal instance types based on usage patterns to
+              eliminate waste.
             </li>
             <li>
               <span className="font-semibold text-white">
                 Reserved Instance & Savings Plan Suggestions:
               </span>{" "}
-              Recommends discounted pricing options based on historical usage trends.
+              Recommends discounted pricing options based on historical usage
+              trends.
             </li>
             <li>
               <span className="font-semibold text-white">
                 Service Limits Monitoring:
               </span>{" "}
-              Alerts when service usage nears limits to **prevent unexpected scaling costs**.
+              Alerts when service usage nears limits to prevent unexpected
+              scaling costs.
             </li>
             <li>
               <span className="font-semibold text-white">
                 Unused Resources Cleanup:
               </span>{" "}
-              Identifies unassociated Elastic IPs, idle load balancers, and unattached EBS volumes.
+              Identifies unassociated Elastic IPs, idle load balancers, and
+              unattached EBS volumes.
             </li>
           </ul>
         </section>
@@ -90,16 +95,18 @@ export default function TrustedAdvisor() {
 
         {/* Best Practices */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold text-blue-300">Best Practices</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            Best Practices
+          </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
             <li>✅ Regularly review and act on recommendations.</li>
             <li>
-              ✅ Automate monitoring using **AWS CloudWatch**  
-              and **AWS Budgets** for proactive cost control.
+              ✅ Automate monitoring using AWS CloudWatch and AWS Budgets for
+              proactive cost control.
             </li>
             <li>
-              ✅ Optimize resources by **downsizing, purchasing Reserved Instances,  
-              and removing unused assets**.
+              ✅ Optimize resources by downsizing, purchasing Reserved
+              Instances, and removing unused assets.
             </li>
           </ul>
         </section>

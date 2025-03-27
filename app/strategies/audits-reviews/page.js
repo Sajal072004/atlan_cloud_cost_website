@@ -13,7 +13,7 @@ export default function AuditsReviews() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/aws-cost-audit.png" // Replace with actual screenshot
+            src="/audit.png" // Replace with actual screenshot
             alt="AWS Cost Audit Screenshot"
             width={800}
             height={400}
@@ -25,8 +25,8 @@ export default function AuditsReviews() {
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
           <h2 className="text-2xl font-semibold text-blue-300">Overview</h2>
           <p className="mt-3 text-gray-300">
-            Regular **cost audits and reviews** help ensure cloud efficiency, **eliminate waste**,  
-            and refine cost-saving strategies over time.
+            Regular cost audits and reviews help ensure cloud efficiency,
+            eliminate waste, and refine cost-saving strategies over time.
           </p>
         </section>
 
@@ -36,19 +36,34 @@ export default function AuditsReviews() {
             How It Helps in Cost Optimization
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>📊 **Detailed Cost Analysis:** Uses AWS Cost Explorer for **comprehensive** breakdowns.</li>
-            <li>🛑 **Detects Unused Resources:** Identifies **idle** or **underutilized** services.</li>
-            <li>🎯 **Aligns Costs with Business Goals:** Ensures spending supports **strategic objectives**.</li>
+            <li>
+              📊 Detailed Cost Analysis: Uses AWS Cost Explorer for
+              comprehensive breakdowns.
+            </li>
+            <li>
+              🛑 Detects Unused Resources: Identifies idle or underutilized
+              services.
+            </li>
+            <li>
+              🎯 Aligns Costs with Business Goals: Ensures spending supports
+              strategic objectives.
+            </li>
           </ul>
         </section>
 
         {/* Best Practices */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold text-blue-300">Best Practices</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            Best Practices
+          </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>✅ **Schedule quarterly cost audits** to monitor cloud expenses.</li>
-            <li>✅ **Use AWS Trusted Advisor** to identify cost-saving opportunities.</li>
-            <li>✅ **Automate cost reporting** with AWS Budgets & Alerts.</li>
+            <li>
+              ✅ Schedule quarterly cost audits to monitor cloud expenses.
+            </li>
+            <li>
+              ✅ Use AWS Trusted Advisor to identify cost-saving opportunities.
+            </li>
+            <li>✅ Automate cost reporting with AWS Budgets & Alerts.</li>
           </ul>
         </section>
 
@@ -59,12 +74,16 @@ export default function AuditsReviews() {
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
             <li>
-              <span className="font-semibold text-white">Azure Cost Management + Advisor:</span>{" "}
-              Provides **cost insights** and **optimization recommendations**.
+              <span className="font-semibold text-white">
+                Azure Cost Management + Advisor:
+              </span>{" "}
+              Provides cost insights and optimization recommendations.
             </li>
             <li>
-              <span className="font-semibold text-white">GCP Billing Reports:</span>{" "}
-              Tracks **cloud expenses** and helps optimize cost allocation.
+              <span className="font-semibold text-white">
+                GCP Billing Reports:
+              </span>{" "}
+              Tracks cloud expenses and helps optimize cost allocation.
             </li>
           </ul>
         </section>

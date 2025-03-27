@@ -59,7 +59,7 @@ export default function Sidebar() {
         </div>
 
         {/* Scrollable Navigation Section */}
-        <div className="flex-1 overflow-y-auto">
+        <div className="mt-10 lg:mt-0 flex-1 overflow-y-auto">
           <nav className="px-4">
             {links.map(({ name, href, icon, external }) => (
               <Link

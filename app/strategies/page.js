@@ -21,8 +21,7 @@ const strategies = [
   },
   {
     title: "AWS Savings Plans",
-    description:
-      "Save on AWS compute usage with flexible pricing options.",
+    description: "Save on AWS compute usage with flexible pricing options.",
     link: "/strategies/savings-plans",
   },
   {
@@ -55,7 +54,6 @@ const strategies = [
       "Implement automation to detect failures and optimize resources without manual intervention.",
     link: "/strategies/self-healing",
   },
-  
 ];
 
 export default function Strategies() {
@@ -67,8 +65,8 @@ export default function Strategies() {
           Cloud Cost Optimization Strategies
         </h1>
         <p className="text-gray-300 text-lg text-center mb-8">
-          Explore various AWS strategies to **minimize cloud costs** while maintaining performance  
-          and reliability.
+          Explore various AWS strategies to minimize cloud costs while
+          maintaining performance and reliability.
         </p>
 
         {/* Strategy Cards Grid */}

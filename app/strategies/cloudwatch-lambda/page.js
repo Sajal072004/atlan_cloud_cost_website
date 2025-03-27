@@ -13,7 +13,7 @@ export default function CloudWatchLambda() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/aws-cloudwatch-lambda.png" // Replace with actual screenshot
+            src="/cloudwatch.png" // Replace with actual screenshot
             alt="AWS CloudWatch with Lambda Screenshot"
             width={800}
             height={400}
@@ -25,8 +25,9 @@ export default function CloudWatchLambda() {
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
           <h2 className="text-2xl font-semibold text-blue-300">Overview</h2>
           <p className="mt-3 text-gray-300">
-            AWS CloudWatch monitors logs, metrics, and events from AWS resources. By integrating **AWS Lambda**,  
-            organizations can **automate responses** to CloudWatch alarms, enabling cost-saving actions.
+            AWS CloudWatch monitors logs, metrics, and events from AWS
+            resources. By integrating AWS Lambda, organizations can automate
+            responses to CloudWatch alarms, enabling cost-saving actions.
           </p>
         </section>
 
@@ -36,26 +37,49 @@ export default function CloudWatchLambda() {
             Use Case: Cleaning Up Unused Snapshots
           </h2>
           <p className="mt-3 text-gray-300">
-            **Problem:** Unused Amazon **EBS snapshots** accumulate, leading to unnecessary storage costs.
+            Problem: Unused Amazon EBS snapshots accumulate, leading to
+            unnecessary storage costs.
           </p>
           <p className="mt-2 text-gray-300">
-            **Solution:** A CloudWatch-triggered Lambda function can:
+            Solution: A CloudWatch-triggered Lambda function can:
           </p>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>📌 Monitor snapshot usage and identify unused snapshots **older than 30 days** (or a custom time limit).</li>
-            <li>📌 Automatically delete them to **free up storage and save costs**.</li>
+            <li>
+              📌 Monitor snapshot usage and identify unused snapshots older than
+              30 days (or a custom time limit).
+            </li>
+            <li>
+              📌 Automatically delete them to free up storage and save costs.
+            </li>
           </ul>
         </section>
 
         {/* Additional Use Cases */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold text-blue-300">Additional Use Cases</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            Additional Use Cases
+          </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>🚀 **Stopping Idle EC2 Instances:** Stop instances with low CPU utilization for extended periods.</li>
-            <li>🚀 **Deleting Unused Load Balancers (ELBs):** Remove ELBs that are not routing traffic.</li>
-            <li>🚀 **Terminating Underutilized RDS Instances:** Shut down RDS instances during non-business hours.</li>
-            <li>🚀 **Cleaning Up Detached EBS Volumes:** Delete unused EBS volumes to prevent unwanted charges.</li>
-            <li>🚀 **Enforcing S3 Lifecycle Policies:** Move old objects to lower-cost storage tiers.</li>
+            <li>
+              🚀 Stopping Idle EC2 Instances: Stop instances with low CPU
+              utilization for extended periods.
+            </li>
+            <li>
+              🚀 Deleting Unused Load Balancers (ELBs): Remove ELBs that are not
+              routing traffic.
+            </li>
+            <li>
+              🚀 Terminating Underutilized RDS Instances: Shut down RDS
+              instances during non-business hours.
+            </li>
+            <li>
+              🚀 Cleaning Up Detached EBS Volumes: Delete unused EBS volumes to
+              prevent unwanted charges.
+            </li>
+            <li>
+              🚀 Enforcing S3 Lifecycle Policies: Move old objects to lower-cost
+              storage tiers.
+            </li>
           </ul>
         </section>
 
@@ -66,11 +90,15 @@ export default function CloudWatchLambda() {
           </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
             <li>
-              <span className="font-semibold text-white">Azure Automation with Logic Apps:</span>{" "}
+              <span className="font-semibold text-white">
+                Azure Automation with Logic Apps:
+              </span>{" "}
               Automates storage cleanup and cost-saving actions.
             </li>
             <li>
-              <span className="font-semibold text-white">GCP Cloud Functions with Cloud Scheduler:</span>{" "}
+              <span className="font-semibold text-white">
+                GCP Cloud Functions with Cloud Scheduler:
+              </span>{" "}
               Automates snapshot deletion and resource scaling.
             </li>
           </ul>
@@ -78,19 +106,29 @@ export default function CloudWatchLambda() {
 
         {/* Best Practices */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold text-blue-300">Best Practices</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            Best Practices
+          </h2>
           <ul className="mt-3 space-y-3 text-gray-300 list-disc list-inside">
-            <li>✅ Automate cleanup tasks like **snapshot deletion** and **stopping idle instances**.</li>
-            <li>✅ Set up **alerts and thresholds** for unexpected cost spikes.</li>
-            <li>✅ Regularly review **CloudWatch logs** to ensure automation scripts are running correctly.</li>
+            <li>
+              ✅ Automate cleanup tasks like snapshot deletion and stopping idle
+              instances.
+            </li>
+            <li>✅ Set up alerts and thresholds for unexpected cost spikes.</li>
+            <li>
+              ✅ Regularly review CloudWatch logs to ensure automation scripts
+              are running correctly.
+            </li>
           </ul>
         </section>
 
         {/* GitHub Repository for Lambda Functions */}
         <section className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl font-semibold text-blue-300">GitHub Repository for Lambda Functions</h2>
+          <h2 className="text-2xl font-semibold text-blue-300">
+            GitHub Repository for Lambda Functions
+          </h2>
           <p className="mt-3 text-gray-300">
-            Find pre-built **Lambda functions** for automating cost optimizations.
+            Find pre-built Lambda functions for automating cost optimizations.
           </p>
           <div className="mt-4">
             <Link
