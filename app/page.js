@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 text-white text-center p-6">
       {/* Heading Section */}
-      <h1 className="text-4xl md:text-5xl font-extrabold my-6 drop-shadow-lg">
+      <h1 className="text-3xl md:text-5xl font-extrabold my-6 drop-shadow-lg">
         Cloud Cost Optimization
       </h1>
 
       {/* Introduction Section */}
-      <div className="mt-12 mx-auto text-gray-300 text-lg md:text-xl mb-8 leading-relaxed text-left">
+      <div className="mt-12 mx-auto text-gray-300 text-lg md:text-lg mb-8 leading-relaxed text-left">
         <p>
           This website presents a comprehensive report for the Atlan intern assignment,  
           focused on strategies to optimize and reduce cloud costs effectively.  
@@ -27,6 +27,21 @@ export default function Home() {
           about cloud spending.
         </p>
       </div>
+
+       {/* Highlighted PDF Report Link */}
+       <div className="text-center mb-8">
+          <p className="text-xl font-semibold text-yellow-400">
+            📄 The PDF report can be found here:
+            <a
+              href="https://drive.google.com/file/d/1_8maKEBSz53P_MDM7YopeagDMhSMPfWi/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-300 hover:text-blue-500 transition"
+            >
+              Download Report
+            </a>
+          </p>
+        </div>
 
       {/* Flowchart Section */}
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">

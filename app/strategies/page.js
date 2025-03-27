@@ -69,6 +69,8 @@ export default function Strategies() {
           maintaining performance and reliability.
         </p>
 
+       
+
         {/* Strategy Cards Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {strategies.map((strategy, index) => (
