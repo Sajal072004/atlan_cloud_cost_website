@@ -3,7 +3,20 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { FaBars, FaTimes, FaHome, FaCalculator, FaCloud, FaDollarSign, FaBell, FaClipboardList, FaGithub, FaUser } from "react-icons/fa";
+import {
+  FaUser,
+  FaBars,
+  FaTimes,
+  FaHome,
+  FaClipboardList,
+  FaCalculator,
+  FaCloud,
+  FaDollarSign,
+  FaBell,
+  FaGithub,
+  FaSearch,
+} from "react-icons/fa";
+import { MdOutlineSecurity, MdHealing } from "react-icons/md"; // Additional icons for new strategies
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false); // Sidebar toggle state
@@ -11,12 +24,16 @@ export default function Sidebar() {
 
   const links = [
     { name: "Home", href: "/", icon: <FaHome /> },
+    { name: "Strategies", href: "/strategies", icon: <FaClipboardList /> },
     { name: "AWS Trusted Advisor", href: "/strategies/trusted-advisor", icon: <FaClipboardList /> },
     { name: "AWS Pricing Calculator", href: "/strategies/pricing-calculator", icon: <FaCalculator /> },
     { name: "AWS CloudWatch + Lambda", href: "/strategies/cloudwatch-lambda", icon: <FaCloud /> },
     { name: "AWS Savings Plans", href: "/strategies/savings-plans", icon: <FaDollarSign /> },
     { name: "AWS Budgets & Alarms", href: "/strategies/budget-alarms", icon: <FaBell /> },
     { name: "AWS Cost Explorer", href: "/strategies/cost-explorer", icon: <FaClipboardList /> },
+    { name: "Anomaly Detection", href: "/strategies/anomaly-detection", icon: <FaSearch /> },
+    { name: "Audits & Reviews", href: "/strategies/audits-reviews", icon: <MdOutlineSecurity /> },
+    { name: "Self-Healing Infrastructure", href: "/strategies/self-healing", icon: <MdHealing /> },
     { name: "GitHub", href: "https://github.com/Sajal072004/Cloud_Cost_Optimizations", icon: <FaGithub />, external: true },
   ];
 
@@ -32,16 +49,18 @@ export default function Sidebar() {
 
       {/* Sidebar Panel */}
       <aside
-        className={`fixed top-0 left-0 h-screen bg-gray-900 text-white shadow-lg p-4 w-64 transition-transform duration-300 z-40 ${
+        className={`fixed top-0 left-0 h-screen bg-gray-900 text-white shadow-lg w-64 transition-transform duration-300 z-40 flex flex-col ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0 lg:w-64 lg:flex flex-col justify-between`}
+        } lg:translate-x-0 lg:w-64`}
       >
         {/* Sidebar Header */}
-        <div>
-          <h2 className="hidden lg:block text-xl font-bold mb-6 text-gray-100">Quick Navigation</h2>
+        <div className="p-4">
+          <h2 className="hidden lg:block text-xl font-bold text-gray-100">Quick Navigation</h2>
+        </div>
 
-          {/* Navigation Links */}
-          <nav className="mt-12 lg:mt-0">
+        {/* Scrollable Navigation Section */}
+        <div className="flex-1 overflow-y-auto">
+          <nav className="px-4">
             {links.map(({ name, href, icon, external }) => (
               <Link
                 key={name}
@@ -58,8 +77,8 @@ export default function Sidebar() {
           </nav>
         </div>
 
-        {/* About Me Section */}
-        <div>
+        {/* Fixed About Me Section at Bottom */}
+        <div className="p-4 border-t border-gray-700">
           <Link
             href="/about"
             className="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-gray-400 hover:bg-gray-800 hover:text-white"
@@ -71,10 +90,7 @@ export default function Sidebar() {
 
       {/* Overlay for Mobile Sidebar */}
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-opacity-50 z-30 lg:hidden"
-          onClick={() => setIsOpen(false)}
-        />
+        <div className="fixed inset-0  bg-opacity-50 h-screen z-30 lg:hidden" onClick={() => setIsOpen(false)} />
       )}
     </>
   );

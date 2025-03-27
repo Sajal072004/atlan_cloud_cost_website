@@ -35,12 +35,15 @@ export default function Home() {
 
       {/* Strategy Cards Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-12 mx-auto max-w-6xl">
-        <StrategyCard title="AWS Trusted Advisor" link="/strategies/trusted-advisor" />
-        <StrategyCard title="AWS Pricing Calculator" link="/strategies/pricing-calculator" />
-        <StrategyCard title="AWS CloudWatch + Lambda" link="/strategies/cloudwatch-lambda" />
-        <StrategyCard title="AWS Savings Plans" link="/strategies/savings-plans" />
-        <StrategyCard title="AWS Budgets & Alarms" link="/strategies/budget-alarms" />
-        <StrategyCard title="AWS Cost Explorer" link="/strategies/cost-explorer" />
+      <StrategyCard title="AWS Trusted Advisor" link="/strategies/trusted-advisor" />
+          <StrategyCard title="AWS Pricing Calculator" link="/strategies/pricing-calculator" />
+          <StrategyCard title="AWS CloudWatch + Lambda" link="/strategies/cloudwatch-lambda" />
+          <StrategyCard title="AWS Savings Plans" link="/strategies/savings-plans" />
+          <StrategyCard title="AWS Budgets & Alarms" link="/strategies/budget-alarms" />
+          <StrategyCard title="AWS Cost Explorer" link="/strategies/cost-explorer" />
+          <StrategyCard title="Anomaly Detection" link="/strategies/anomaly-detection" />
+          <StrategyCard title="Audits & Reviews" link="/strategies/audits-reviews" />
+          <StrategyCard title="Self-Healing Infrastructure" link="/strategies/self-healing" />
       </div>
     </div>
   );
