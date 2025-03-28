@@ -9,7 +9,7 @@ export default function About() {
         {/* Profile Image */}
         <div className="flex justify-center mb-6">
           <Image
-            src="/profile.jpg" // Replace with your actual image
+            src="/profile.jpg"
             alt="Sajal Namdeo"
             width={150}
             height={150}

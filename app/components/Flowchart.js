@@ -37,7 +37,7 @@ export default function Flowchart() {
             <Image
               src="/flowchart.png"
               alt="Flowchart"
-              width={1000} // Increased size for better visibility
+              width={1000}
               height={800}
               className="rounded-lg shadow-lg"
             />

@@ -19,7 +19,7 @@ export default function PricingCalculator() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/pricing-calculator.png" // Replace with actual screenshot
+            src="/pricing-calculator.png"
             alt="AWS Pricing Calculator Screenshot"
             width={800}
             height={400}

@@ -13,7 +13,7 @@ export default function CloudWatchLambda() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/cloudwatch.png" // Replace with actual screenshot
+            src="/cloudwatch.png"
             alt="AWS CloudWatch with Lambda Screenshot"
             width={800}
             height={400}

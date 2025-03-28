@@ -13,7 +13,7 @@ export default function AnomalyDetection() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/anamoly.png" // Replace with actual screenshot
+            src="/anamoly.png"
             alt="AWS Anomaly Detection Screenshot"
             width={800}
             height={400}

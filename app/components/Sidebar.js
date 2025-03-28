@@ -77,7 +77,7 @@ export default function Sidebar() {
           </nav>
         </div>
 
-        {/* Fixed About Me Section at Bottom */}
+       
         <div className="p-4 border-t border-gray-700">
           <Link
             href="/about"

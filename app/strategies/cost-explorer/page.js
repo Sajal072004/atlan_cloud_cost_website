@@ -13,7 +13,7 @@ export default function CostExplorer() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/cost-explorer.png" // Replace with actual screenshot
+            src="/cost-explorer.png"
             alt="AWS Cost Explorer Screenshot"
             width={800}
             height={400}

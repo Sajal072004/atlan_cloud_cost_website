@@ -13,7 +13,7 @@ export default function AuditsReviews() {
         {/* AWS Screenshot */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/audit.png" // Replace with actual screenshot
+            src="/audit.png"
             alt="AWS Cost Audit Screenshot"
             width={800}
             height={400}
